@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
       <div>
-       Footer
+       <p>copyright &copy; 2023</p>
       </div>
     );
   }
