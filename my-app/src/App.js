@@ -5,12 +5,10 @@ import { List } from './components/main/List';
 
 function App() {
 
-  const items = ['Adam', 'Jacek', 'Ferdek'];
-
   return (
     <div>
       <Header />
-      <List items={items} />
+      <List />
       <Footer />
     </div>
   );
