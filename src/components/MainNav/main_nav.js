@@ -8,6 +8,7 @@ export const MainNav = () => {
             <MainNavLink href="/" label="Homepage" />
             <MainNavLink href="/contact" label="Contact" />
             <MainNavLink href="/about" label="About" />
+            <MainNavLink href="/offer" label="Offer" />
         </nav>
     )
 }

@@ -1,9 +1,9 @@
 import { Page } from "../../components/Page/Page"
 import { PageHeader } from "../../components/PageHeader/page_header"
-export const Homepage = () => {
+export const OfferPage = () => {
 
     return (
-        <Page label={"Homepage"}>
+        <Page label={"Offer"}>
             <PageHeader />
         </Page>
     )
