@@ -1,0 +1,12 @@
+.main-nav {
+    display: flex;
+    gap: 10px;
+
+    &-item {
+        text-decoration: none;
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}
