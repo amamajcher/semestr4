@@ -1,0 +1,102 @@
+body{
+    font-size: 16px;
+}
+
+.todolist{
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    background-color: #edf2f4;
+    border-radius: 8px;
+    &_title{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+  }
+  
+  .input {
+    display: flex;
+    margin-bottom: 20px;
+    &_item{
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+  }
+
+  .button{
+    &_add{
+        padding: 10px 20px;
+        margin-left: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    &_delete{
+        padding: 6px 12px;
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 8px;
+        font-size: 12px;
+    }
+    &_addtocart{
+        padding: 6px 12px;
+        background-color: #2a9d8f;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    &_clear{
+        padding: 6px 12px;
+        background-color:#8d99ae;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+  }
+  
+  .todolist_items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .todolist_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .msg_addtocart{
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+
+  .basket{
+    background-color: #2a9d8f;
+    color: #fff;
+    max-width: 140px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
