@@ -1,12 +1,36 @@
+import React, { useState, useEffect } from 'react';
 import { ListItem } from './ListItem';
 
-export const List = ({items}) => {
+export const List = () => {
+
+    const [data, setData] = useState([]);
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    useEffect(() =>{
+        fetch('https://jsonplaceholder.typicode.com/todos')
+        .then((response) => response.json())
+        .then((json) => setData(json))
+        .catch((error) => console.error('Error', error));
+    }, []);
+
+    const handleItemClick = (item) => {
+        setSelectedItem(item.id === selectedItem?.id ? null : item);
+    };
+
     return (
-        <ul>
-            {items.map((item, index) => (
-                <ListItem key={`user-${index}`} item={item} />
-            ))} 
-        </ul>
+        <div>
+            <h1>{selectedItem ? `Nazwa: ${selectedItem.title}` : 'Brak nazwy'}</h1>
+            <ul>
+                {data.map((item) => (
+                    <ListItem
+                    key={item.id}
+                    item={item}
+                    isSelected={selectedItem?.id === item.id}
+                    onClick={() => handleItemClick(item)}
+                    />
+                ))}
+            </ul>
+        </div>
     );
-  }
+  };
   

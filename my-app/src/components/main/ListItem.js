@@ -1,12 +1,15 @@
-export const ListItem = ({item}) => {
+import React from 'react';
 
-    const handleClick = () => {
-        console.log(item);
-    };
-
-    return (
-        <li onClick={handleClick}>
-            {item}
-        </li>
-    );
-  }
+export const ListItem= ({ item, isSelected, onClick }) => {
+  return (
+    <li
+      onClick={onClick}
+      style={{
+        background: isSelected ? 'lightgreen' : 'white',
+        cursor: 'pointer',
+      }}
+    >
+      {item.title}
+    </li>
+  );
+};
